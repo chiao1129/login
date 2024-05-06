@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('bk.jpg');
+    background-size: cover;
+    background-position: center;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 調整這裡的顏色和透明度 */
+    z-index: -1;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.logo {
+    position: absolute;
+    top: 5px; /* 與頁面頂部的距離 */
+    left: 20px; /* 與頁面左側的距離 */
+    width: 120px; /* 圖片寬度 */
+    height: auto; /* 讓高度自動調整以保持圖片比例 */
+    z-index: 999; /* 使圖片處於最上層 */
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 50px; /* 調整上方外邊距為 50px */
+
+}
+
+.login-box h1 {
+    margin-bottom: 20px;
+}
+h1 {
+    color: #fff; /* 讓文字顏色變為白色 */
+    text-align: left; /* 將文字靠左對齊 */
+
+}
+
+.options label {
+    color: #fff; /* 設置文字顏色為白色 */
+}
+label1 {
+    display: block; /* 將 "或" 文字轉換為 block 元素 */
+    margin-top: 20px; /* 添加上方間距 */
+    margin-bottom: 20px; /* 添加下方間距 */
+    color: #ccc; /* 設置文字顏色為白色 */
+}
+
+input[type="email"],
+input[type="password"] {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    padding: 20px 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d10813;
+}
+.login-code-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* 透明白色 */
+    color: #fff; /* 白色文字 */
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-code-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* 透明白色，稍微有點透明度 */
+    color: #fff; /* 鼠標懸停時的文字顏色 */
+}
+.forgot-password {
+    color: #fff; /* 白色文字 */
+    text-align: center; /* 文字居中對齊 */
+    margin-top: 20px; /* 上方間距 */
+}
+.join-netflix {
+    color: #ccc; /* 白色文字 */
+    text-align: left; /* 文字居中對齊 */
+    margin-top: 10px; /* 上方間距 */
+}
+.join-netflix span {
+    color: #fff; /* 白色文字 */
+}
+.captcha-info {
+    color: #cccc; /* 白色文字 */
+    text-align: left; /* 文字左對齊 */
+    font-size: 13px; /* 字體大小為14px */
+    margin-top: 5px; /* 上方間距 */
+}
+.further-understanding {
+    color: #007bff; /* 藍色文字 */
+    cursor: pointer; /* 鼠標指針樣式 */
+    margin-top: 10px; /* 上方間距 */
+    font-size: 13px; /* 字體大小為14px */
+}
+
+.recaptcha-policy {
+    color: #cccc; /* 白色文字 */
+    text-align: left; /* 文字左對齊 */
+    font-size: 12px; /* 字體大小為 12px */
+    margin-top: 10px; /* 上方間距 */
+}
+
+.further-understanding:hover + .recaptcha-policy {
+    display: none; /* 滑鼠懸停時，隱藏 recaptcha-policy */
+}
+
+.options {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options label {
+    margin-right: 10px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

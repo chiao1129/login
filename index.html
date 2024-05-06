@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="login-box">
+        <a href="https://www.netflix.com/tw/" target="_blank">
+            <img src="logo1.png" alt="Netflix Logo" class="logo">
+        </a>
+        <h1>登入</h1>
+        <form>
+            <input type="email" placeholder="電子郵件地址或手機號碼" required>
+            <input type="password" placeholder="密碼" required>
+            <button type="submit">登入</button>
+
+            <label1>或</label1>
+            <button type="button" class="login-code-button">使用登入碼</button>
+            <p class="forgot-password">忘記密碼?</p>
+
+        </form>
+        <div class="options">
+            <label><input type="checkbox"> 記住我 </label>
+        </div>
+        <p class="join-netflix">尚未加入 Netflix？ <span>馬上註冊。</span></p>
+        <p class="captcha-info">此頁面受到 Google reCAPTCHA 保護，以確認您不是機器人。 <span class="further-understanding" onclick="toggleRecaptchaInfo()">進一步了解。</span></p>
+        <p class="recaptcha-policy" style="display: none;">由 Google reCAPTCHA 收集的資訊受 Google《隱私權聲明》與《服務條款》約束，用來提供、維持並提升 reCAPTCHA 服務，並且維繫一般安全（Google 不會用於個人化廣告）。</p>
+    </div>
+</div>
+
+</body>
+</html>
